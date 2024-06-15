@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" src="archivo.cssz">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+    #expand {
+    width: 90px;
+    height: 40px;
+    background: red;
+    transition: width 2s;
+    }
+    #pat {
+width: 90px;
+height: 40px;
+transition: width 2s, height 2s, transform 2s;
+}
+
+#pat:hover {
+width: 140px;
+height: 220px;
+transform: rotate(360deg);
+}
+
+#expand:hover {
+width: 150px;
+}
+    body{
+    background-image: url("img/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .titulos {
+        font-size: 50px;
+        background-color: rgb(255, 0, 0);
+    
+    }
+    .subtitulos {
+        font-size: 35px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    div{
+    max-width: 900px;
+    margin: auto;
+    background-color: #181818;
+    font-size: 20px;
+    margin-top: 50px;
+    color: white;
+    }
+    .menu{
+    display: inline;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    }
+    .menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    }
+    .menu > li:hover{
+    background-color: red;
+    }
+    .submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+    .menu li:hover .submenu {
+    display: block;
+    }
+    .menu li:hover{
+    background-color: rgba(0, 0, 0, 0.432);
+    }
+    .menu li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    }
+    #textoMostrado {
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: rgba(240, 248, 255, 0.708);
+    }
+    
+    .titulo{
+    padding: 15px 15px 15px 20px;
+    margin-top: 20px;
+    background-color: rgba(226, 127, 74, 0.708);
+    color: rgb(246, 227, 244);
+    }
+    .creditos{
+    padding: 15px 15px 15px 20px;
+    margin-top: 20px;
+    background-color: rgba(75, 20, 20);
+    color: rgb(246, 227, 244);
+    }
+
+    </style>
+</head>
+<body style="background-image: url(img/Fondo.jpg);">
+    <div class="titulo">
+        <h1 style="display: inline-block; margin-right: 120px;"><img
+        src="img/Logo.png"height="200" lang="400"/>  <img id="pat"
+        src="img/camaralogo.png">
+        <h3 aligh="right" style="display: inline-block;">
+            <marquee direction="op">Los mejores consejos de edicion aqui</marquee>
+        </h3><br>
+        </div>
+        <div class="menu" >
+        <ul>
+            <li style="display: inline-block;">
+                <a href="#">Materiales Populares</a>
+                    <ul class="submenu">
+                        <li><a href="#editoresandroid" data-texto="2">Editores para android</a></li>
+                    <li><a href="#" data-texto="1">Editores para pc</a></li>
+                    <li><a href="#" data-texto="3">Redes</a></li>
+                </ul>
+            </li>
+            <li style="display: inline-block;">
+                <a href="frametutorialesypruebas.html">Tutoriales y Pruebas</a>
+            </li>
+            <li style="display: inline-block;">
+                <a href="formulario.html">Sugerencias</a>
+            </li>
+            <li style="display: inline-block;">
+                <a href="#creditos">Creditos</a>
+            </li>
+        </ul>
+        </div>
+        <br><br><br><br>
+
+        <div class="div">
+            <section id="editoresandroid">
+            <div class="titulos"><p>Mejores Editores para android</p>
+</div>
+
+<h4></h4>
+            <center>            
+                <table border="0">
+<tr>
+    <th>KineMaster</th>
+    <th>CatCup</th>
+    <th>FilmoraGO</th>
+</tr>
+<tr>
+    <th><a href="https://play.google.com/store/apps/details?id=com.nexstreaming.app.kinemasterfree&hl=es_MX">
+<img src="img/logosapps/kinemaster.png" height="200" lang="200" alt="logo"/></th></a>
+    <th><a href="https://www.capcut.com/es-es/tools/video-editor-download">
+        <img src="img/logosapps/catcup.png" height="200" lang="200" alt="logo"/></th></a>
+    <th><a href="https://filmora.wondershare.net/es/editor-de-video/ad-filmora.html?gad_source=1&gclid=CjwKCAjw1K-zBhBIEiwAWeCOF8ahPfLCI9a1ZHZIxcXKGqP7Reh-UE8jKtTK9-EejRfVYKe-ySt0qxoCQD8QAvD_BwE">
+        <img src="img/logosapps/filmora.png" alt="logo" height="200" lang="200"/></th></a>
+    
+</tr>
+<tr>
+    <th>GoPro</th>
+    <th><p>Power editor</p></th>
+</tr>
+<tr>
+    <th><a href="https://play.google.com/store/apps/details?id=com.gopro.smarty&hl=es_MX">
+        <img src="img/logosapps/gopro.png" alt="logo" height="200" lang="200"/></th></a>
+    <th><a href="https://es.cyberlink.com/products/powerdirector-video-editing-software/overview_es_ES.html?affid=2581_-1_723_PDR-NB-PMax&gad_source=1&gclid=CjwKCAjw1K-zBhBIEiwAWeCOF_V7-w5P7LipZ0SRSwDQAF0ggMddpU3Rz6C0pMmPnkF7FCCUAu8TGRoCh84QAvD_BwE">
+        <img src="img/logosapps/powereditor.jpg" alt="logo" height="200" lang="200"/></th></a>
+</tr>
+</table>
+</section>
+</center>
+
+        </div>
+        <div class="creditos">
+            <section id="creditos">
+            <h2>Creditos:</h2>
+            <b>Dueño: </b><u>Morales Moroyoqui Angel Gael</u><br>
+            <b>Grupo y Grado: </b><u>4°A</u><br>
+            <b>Especialidad: </b><u>Programación</u><br>
+            <b>Turno: </b><u>Matutino</u><br>
+            <b>Plantel</b><u>Centro de estudios tecnologicos industriales y de servicios numero 128</u><br>
+            <b>Ultima Actualización: </b><u>Sabado 15 de Junio de 2024</u>
+        </section>
+        </div>
+    </body>
+</html>
